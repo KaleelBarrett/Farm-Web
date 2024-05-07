@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - KPB Farms</title>
+    <script
+      src="https://kit.fontawesome.com/630bc57373.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Styles for screens with a minmum width of 1200 pixels or more */
+      @media screen and (min-width: 1200px) {
+        body {
+          font-size: 20px;
+        }
+        .logo {
+          width: 120px;
+          height: 110px;
+          margin-left: 100px;
+        }
+
+        nav ul li a {
+          font-size: 24px;
+        }
+
+        .cart {
+          right: -900px;
+          width: 600px;
+        }
+      }
+
+      /* Styles for screens with a minmum width of 768 pixels or more */
+      @media screen and (min-width: 768px) {
+        nav ul li a {
+          font-size: 14px;
+        }
+
+        .logo {
+          width: 100px;
+          height: 100px;
+          margin-left: 50px;
+        }
+      }
+
+      /* Styles for screens with a maximum width of 600 pixels or less */
+      @media screen and (max-width: 600px) {
+        body {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+  header {
+    background-color: #afd3e2;
+    height: 120px;
+  }
+  .logo {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto; /* Center the logo horizontally */
+    display: block; /* Ensure it takes up its own line */
+  }
+  nav {
+    justify-content: center; /* Center the navigation items horizontally */
+    margin: 0 auto; /* Center the navigation horizontally */
+  }
+  nav ul {
+    padding: 0; /* Remove default padding */
+    list-style-type: none; /* Remove bullet points */
+  }
+  nav ul li {
+    display: inline-block; /* Display navigation items in a line */
+    margin: 0 10px; /* Add spacing between navigation items */
+  }
+  nav ul li a {
+    font-size: 12px; /* Adjust font size of navigation links */
+  }
+  
+  .cart {
+  width: auto; /* Set width to auto */
+  max-width: 600px; /* Optionally, set a maximum width */
+  margin: 0 auto; /* Center the cart horizontally */
+  padding: 20px; /* Add padding for spacing */
+  background-color: #fff; /* Add a background color */
+  border: 1px solid #ccc; /* Add a border */
+  border-radius: 5px; /* Add border radius for rounded corners */
+}
+
+
+  .cart-icon img {
+    width: 20px;
+  }
+  .quantity {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <img src="Pictures/KPB_KPB V1.png" class="logo" alt="" />
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="#footer">Contact</a></li>
+            <li>
+              <div class="cart-icon" id="cartIcon">
+                <img src="Pictures/trolley.png" alt="Cart" />
+                <div class="quantity" id="cartQuantity">0</div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="cart" id="cart">
+      <h1>Shopping Cart</h1>
+      <ul class="cart-items" id="cartItems">
+        <div class="quantity"></div>
+      </ul>
+      <div class="checkout">
+        <div class="total" id="cartTotal">$0.00</div>
+        <div class="close" id="closeCart">Close</div>
+      </div>
+      <form id="checkoutForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required aria-label="Your Name" />
+        <label for="emailInput">Email:</label>
+        <input type="email" id="emailInput" required aria-label="Your Email" />
+        <label for="number">Contact Number:</label>
+        <input
+          type="character"
+          id="number"
+          required
+          aria-label="Your Phone Number"
+        />
+        <label for="address">Street Address:</label>
+        <input
+          type="address"
+          id="address"
+          required
+          aria-label="Your Street Address"
+        />
+        <button type="submit">Checkout</button>
+      </form>
+    </div>
+
+    <div class="text-overlay-about">
+      <p>
+        Welcome to KPB Farms! At KPB Farms, we are passionate about bringing the
+        finest, locally sourced farm produce directly to your doorstep. We
+        understand the importance of healthy, organic, and sustainable food
+        choices, and we strive to provide you with the freshest, most flavorful
+        fruits, vegetables, and other farm products available.
+      </p>
+      <p>
+        Our Story: Founded in 2017, KPB Farms was born out of a deep
+        appreciation for the rich bounty that nature offers and a desire to
+        connect farmers directly with consumers. We realized that there was a
+        need to bridge the gap between the farm and the table, ensuring that
+        everyone can enjoy the benefits of fresh, wholesome produce without
+        compromising on quality.
+      </p>
+      <p>
+        Our Philosophy: We firmly believe in supporting local farmers and
+        fostering sustainable agriculture practices. We work closely with a
+        network of dedicated farmers who share our values and commitment to
+        providing you with the very best. By sourcing our products directly from
+        these passionate farmers, we can guarantee that you receive produce that
+        is grown with care, without the use of harmful chemicals or artificial
+        additives.
+      </p>
+      <p>
+        Convenience at Your Fingertips: We understand that life can be busy, and
+        finding the time to visit a farmer's market or a local farm may not
+        always be feasible. That's why we offer a convenient online platform
+        that allows you to browse our selection, place orders, and schedule
+        deliveries from the comfort of your home. Our user-friendly interface
+        makes it easy to explore our products, read detailed descriptions, and
+        make informed choices about the produce you bring into your kitchen.
+      </p>
+      <p>
+        Delivery Service: Once you've placed your order, our dedicated team
+        ensures that your farm-fresh delights are carefully packed and delivered
+        to your doorstep. We take great care in maintaining the quality and
+        freshness of your produce throughout the delivery process, so you can
+        enjoy the flavors and nutritional benefits at their peak. Our delivery
+        service operates on a regular schedule, ensuring that you can plan your
+        meals and have your favorite farm products conveniently delivered to you
+        on a weekly or bi-weekly basis.
+      </p>
+      <p>The KPB Team</p>
+    </div>
+
+    <footer id="footer">
+      <div class="footer-left">
+        <h3>Contact Us</h3>
+        <form id="contactForm">
+          <input
+            type="text"
+            id="Name"
+            placeholder="Your Name"
+            required
+            aria-label="Your Name"
+          />
+          <input
+            type="email"
+            id="email"
+            placeholder="Your Email"
+            required
+            aria-label="Your Email"
+          />
+          <textarea id="message" placeholder="Your Message" required></textarea>
+          <button id="submit" type="submit">Send Message</button>
+        </form>
+
+        <div class="social-icons">
+          <div class="social-icons">
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              aria-label="Facebook Profile"
+            >
+              Facebook
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              aria-label="Twitter Profile"
+            >
+              Twitter
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              aria-label="Instagram Profile"
+              >Instagram
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-right">
+        <img src="Pictures/KPB_KPB V1.png" alt="Logo " />
+      </div>
+      <p class="copyrite">&copy; 2023 KPB Farms. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="email.js"></script>
+  </body>
+</html>
